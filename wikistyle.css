@@ -1,0 +1,269 @@
+
+html {    
+    box-sizing: border-box;  
+}    
+ *, *:before, *:after {    
+    box-sizing: inherit;  
+}
+ 
+body {
+  /*background-image: url("https://source.unsplash.com/1600x900/?language");*/
+  background-color: rgba(0, 0, 0, .5);
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;   
+  text-align: left;
+  /*line-height: 1.5;*/
+  padding: 3em 1em;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+h1 {
+	font-size: calc(2rem + 3.0vmin);
+	padding-top: 10px;
+	padding-bottom: 0px;
+	
+	
+}
+
+h2 {
+	font-size: calc(2rem + 1vmin);
+	padding-top: 30px;	
+	vertical-align: text-bottom;
+	max-height: 80px;
+}
+
+h3 {
+	/*line-height: 100%;*/
+	font-size: calc(1.5rem + 1.5vmin);
+	padding: 5px 0px 0px 20px;
+	min-height: 15px;
+	max-height: 30px;
+	vertical-align: text-top;
+	font-style: italic;
+}
+
+h3:hover {
+	color: (255, 255, 255);
+  text-shadow: 0px 0px 12px #ffffff;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: column;
+	align-items: center;
+    flex-flow: column;
+    font-weight: bold;
+    text-align: center;
+	flex-grow: 1;
+	font-size: 150%;
+}
+
+.flex-item {
+	width: 400px;
+	height: auto;
+	text-align: center;
+	align-items: center;	
+}
+
+a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);	
+	font-size: calc(0.5rem + 3.0vmin);
+	text-align: left;
+	
+}
+@keyframes fadein
+{
+  0%{opacity: 0}
+  100%{opacity:1}
+}
+
+/***search items image cards***/
+
+.feature-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.feature-box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 33.333333%;
+  padding: 2em 1em;
+  margin-bottom: 20px;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode:forwards;
+  box-shadow: 10px 10px 10px 2px black
+}
+
+.feature-box:hover {
+  background-color: rgba(0, 0, 0, .3);	
+}
+
+.feature-box img {
+  order: -1;
+  padding-top: 10px;
+  padding-left: 10px;  
+}
+
+.feature-box p {
+  flex: 1 0;
+}
+
+.feature-title {
+  font-size: calc(1rem + 2vmin);
+  font-family: "Cabin", Arial;
+  font-weight: 700;
+  
+}
+
+.feature-title:hover {
+  font-size: calc(1rem + 2vmin);
+  font-family: "Cabin", Arial;
+  font-weight: 700;
+  color: (255, 255, 255);
+  text-shadow: 0px 0px 12px #ffffff;
+  
+}
+
+/*****/
+
+ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+}
+
+li:hover {
+	background-color: rgba(0, 0, 0, .3);	
+}
+
+img.resize {
+  max-width:300%;
+  max-height:auto;
+}
+
+label {
+	font-family: 'Oxygen Mono';
+	font-size: 150%;
+	color: white;
+	
+}
+
+input {
+	font-family: 'Oxygen Mono';
+	font-size: 22px;
+	width: 20%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+	caret-color: #66ffff;
+   
+}
+
+input:hover {
+    background-color: rgba(0, 0, 0, .6);
+	color: white;
+	border-radius: 8px;
+}
+
+input[type=reset] {
+	background-color: rgba(0, 0, 0, 0);
+	font-family: 'Oxygen Mono';
+	width: 0%;
+	font-size: calc(0.5rem + 5.0vmin);
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;	
+}
+
+button {
+	font-family: 'Oxygen Mono';
+	width: 20%;
+    background-color: rgba(0, 0, 0, .5);
+	color: #66ffff;
+    font-size: calc(0.5rem + 5.0vmin);
+    padding: 14px 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, .8);
+	color: #66ffff;
+    text-shadow: 0px 0px 20px #66ffff;
+	border-radius: 8px;
+}
+
+.fa fa-refresh {
+	font-family: 'Oxygen Mono';
+	width: 20%;
+    background-color: rgba(0, 0, 0, .5);
+	color: #66ffff;
+    font-size: calc(0.5rem + 5.0vmin);
+    padding: 14px 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fa fa-refresh:hover {
+	background-color: rgba(0, 0, 0, .8);
+	color: #66ffff;
+    text-shadow: 0px 0px 12px #66ffff;
+	border-radius: 8px;
+}
+
+select {
+	font-family: 'Oxygen Mono';
+	font-size: 22px;
+	width: 10%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	text-align: center;
+	text-anchor: middle;
+}
+
+option {
+	font-family: 'Oxygen Mono';
+	font-size: 22px;
+	width: 10%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	text-align: center
+	text-anchor: middle;
+}
+
+i:hover {
+    background-color: rgba(0, 0, 0, .8);
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+
